@@ -1,0 +1,11 @@
+C:\Projects\Coursera-Projects>git config --global http.sslbackend schannel
+
+C:\Projects\Coursera-Projects>git clone https://github.com/vvmane2004/coursera-test.git
+
+C:\Projects\Coursera-Projects>cd coursera-test
+
+C:\Projects\Coursera-Projects\coursera-test>atom .
+
+C:\Projects\Coursera-Projects\coursera-test>browser-sync --server --directory --files "**/*"
+
+C:\Projects\Coursera-Projects\coursera-test>git status
