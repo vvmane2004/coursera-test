@@ -9,3 +9,13 @@ C:\Projects\Coursera-Projects\coursera-test>atom .
 C:\Projects\Coursera-Projects\coursera-test>browser-sync --server --directory --files "**/*"
 
 C:\Projects\Coursera-Projects\coursera-test>git status
+
+C:\Projects\Coursera-Projects\coursera-test>git add .
+
+C:\Projects\Coursera-Projects\coursera-test>git commit -m "first web checkin"
+
+C:\Projects\Coursera-Projects\coursera-test>git config --global user.name "Vishal Mane"
+
+C:\Projects\Coursera-Projects\coursera-test>git config --global user.email vishal.mane@yardi.com
+
+C:\Projects\Coursera-Projects\coursera-test>git push
