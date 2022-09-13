@@ -1,7 +1,7 @@
 (function(){
 'use strict';
 
-var shoplist1 =["milk","donuts","chocolate"];
+var shoplist1 =["milk","donuts","chocolate", "milk biscuit"];
 var shoplist2 =[
   {name:"milk", qty:"2"}
   ,{name:"donuts", qty:"200"}

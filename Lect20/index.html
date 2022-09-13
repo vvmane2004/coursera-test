@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app ="ShopApp">
+  <head>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <meta charset="utf-8">
+    <title>ng repeat</title>
+  </head>
+  <body>
+    <h1>Custom Service</h1>
+    <div id="List1" class="" ng-controller="ShoppingListAddController as list1">
+      <input type="" ng-model="list1.itemName" name="" value="">
+      <input type="" ng-model="list1.itemQty" name="" value="">
+      <button type="button" ng-click="list1.addItem()"  name="button">Add </button>
+    </div>
+
+    <div class="" ng-controller="ShopListController as showlist">
+      <h3>Shopping List</h3>
+      <!-- <input type="text" name="" value="" ng-model="search"> -->
+      <ol>
+        <li ng-repeat="item in showlist.items">{{item.itemQty}} of {{item.itemName}}
+          <button type="button" name="button" ng-click="showlist.removeItem($index)"> X </button>
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>

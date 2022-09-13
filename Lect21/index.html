@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app ="ShopApp">
+  <head>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <meta charset="utf-8">
+    <title>ng repeat</title>
+  </head>
+  <body>
+    <h1>Custom Service</h1>
+    <div id="List1" class="" ng-controller="ShoppingListAddController1 as list1">
+      <h3>List 1</h3>
+      <input type="" ng-model="list1.itemName" name="" value="">
+      <input type="" ng-model="list1.itemQty" name="" value="">
+      <button type="button" ng-click="list1.addItem()"  name="button">Add </button>
+      <ol>
+          <button type="button" name="button" ng-click="list1.removeItem($index)"> X </button>
+          <li ng-repeat="item in list1.items">{{item.itemQty}} of {{item.itemName}}
+        </li>
+      </ol>
+      <div class="error">Error:{{list1.errorMessage}}</div>
+    </div>
+
+
+    <div id="List2" class="" ng-controller="ShoppingListAddController2 as list2">
+      <h3>List 2 max 3 items</h3>
+      <input type="" ng-model="list2.itemName" name="" value="">
+      <input type="" ng-model="list2.itemQty" name="" value="">
+      <button type="button" ng-click="list2.addItem()"  name="button">Add </button>
+      <ol>
+        <li ng-repeat="item in list2.items">{{item.itemQty}} of {{item.itemName}}
+          <button type="button" name="button" ng-click="list2.removeItem($index)"> X </button>
+        </li>
+      </ol>
+      <div class="error">Error:{{list2.errorMessage}}</div>
+    </div>
+
+  </body>
+</html>
