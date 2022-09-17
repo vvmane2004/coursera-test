@@ -3,7 +3,7 @@
 
   angular.module('ShopApp',[])
   .controller('ShoppingListAddController',ShoppingListAddController)
-  .controller('ShopListController',ShopListController)
+  .controller('ShopListShowController',ShopListShowController)
   .service('ShopListService',ShopListService);
 
   ShoppingListAddController.$inject= ['ShopListService'];
@@ -18,8 +18,8 @@
     }
   }
 
-ShopListController.$inject=['ShopListService'];
-function ShopListController(ShopListService){
+ShopListShowController.$inject=['ShopListService'];
+function ShopListShowController(ShopListService){
   var showlist = this;
   showlist.items = ShopListService.getItems();
 
